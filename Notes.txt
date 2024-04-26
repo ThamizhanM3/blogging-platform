@@ -1,0 +1,48 @@
+Create backend folder
+Create index.js in backend folder
+
+cd backend:
+    npm init -y
+    npm i express cors mongoose body-parser jsonwebtoken
+    npm i nodemon --save-dev
+
+index.js
+    Import express, mongoose, cors, body-parser
+    Create an express app
+    Make the app to use bodyParser and cors policy
+    Make it to listen to a free port
+    Create a get request
+
+Create all folders:
+    controllers
+    models
+    routes
+
+Create User.js in models
+
+User.js
+    Import mongoose
+    Create a Schema for user details to be stored
+    Create User model
+    Export User model
+    Disable versionKey
+
+index.js:
+    Create an async function to connect to DB
+    Use try catch block
+
+Create userRoutes.js in routes folder
+
+userRoutes:
+    Import express
+    Import express router
+    Create post request to login user
+    Import validateUser function from userController
+    Import userController
+    Export router
+
+Create userController in controllers folder
+
+userController.js
+    Import express
+    Create validateUser async function that gets user details from the DB
